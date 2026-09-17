@@ -1,6 +1,19 @@
-[package]
-name = "sertemp"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "2"
+members = [
+    "crates/*",
+    "xtask",
+]
 
-[dependencies]
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+clap = { version = "4.6.7", features=["derive"] }
+sertemp_core = { path = "crates/sertemp_core" }
+sertemp_config = { path = "crates/sertemp_config" }
+sertemp_docker = { path = "crates/sertemp_docker" }
+sertemp_ui = { path = "crates/sertemp_ui" }
+sertemp_test_utils = { path = "crates/sertemp_test_utils" }

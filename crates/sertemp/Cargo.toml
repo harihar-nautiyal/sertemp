@@ -1,0 +1,11 @@
+[package]
+name = "sertemp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+sertemp_core = { workspace = true }
+sertemp_config = { workspace = true }
+sertemp_docker = { workspace = true }
+sertemp_ui = { workspace = true }
