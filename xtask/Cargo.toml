@@ -7,6 +7,7 @@ license.workspace = true
 [dependencies]
 cli = { path = "../crates/cli" }
 clap = { workspace = true }
+typed-builder = {workspace = true}
 anstream = "0.6"
 anstyle = "1.0"
 indicatif = "0.17"

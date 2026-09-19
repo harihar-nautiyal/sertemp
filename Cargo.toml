@@ -12,6 +12,7 @@ license = "MIT OR Apache-2.0"
 
 [workspace.dependencies]
 clap = { version = "4.6.7", features=["derive"] }
+typed-builder = {version = "0.23.2"}
 sertemp_core = { path = "crates/sertemp_core" }
 sertemp_config = { path = "crates/sertemp_config" }
 sertemp_docker = { path = "crates/sertemp_docker" }
