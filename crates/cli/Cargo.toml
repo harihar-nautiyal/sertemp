@@ -1,14 +1,12 @@
 [package]
-name = "xtask"
+name = "cli"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 
 [dependencies]
-cli = { path = "../crates/cli" }
 clap = { workspace = true }
 anstream = "0.6"
 anstyle = "1.0"
 indicatif = "0.17"
 comfy-table = "7.1"
-chrono = "0.4.45"

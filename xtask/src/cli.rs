@@ -1,6 +1,5 @@
 use clap::{Parser, Subcommand};
-
-use crate::style::style;
+use cli::style::style;
 
 #[derive(Debug, Parser)]
 #[command(name = "xtask")]

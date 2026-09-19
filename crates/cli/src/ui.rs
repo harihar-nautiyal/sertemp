@@ -26,7 +26,9 @@ pub fn log_step(step: &str, details: &str) {
 }
 
 pub fn log_success(target: &str, message: &str) {
-    anstream::println!("  {ARCTIC_MINT}✔{ARCTIC_MINT:#} {STEEL_BLUE}{target}{STEEL_BLUE:#}: {message}");
+    anstream::println!(
+        "  {ARCTIC_MINT}✔{ARCTIC_MINT:#} {STEEL_BLUE}{target}{STEEL_BLUE:#}: {message}"
+    );
 }
 
 pub fn log_error(err: &str) {
